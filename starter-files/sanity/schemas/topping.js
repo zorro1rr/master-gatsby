@@ -15,6 +15,15 @@ export default {
       description: 'What is the name of the topping?',
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 100,
+      },
+    },
+    {
       name: 'vegetarian',
       title: 'Vegetarian',
       type: 'boolean',
@@ -28,6 +37,7 @@ export default {
   preview: {
     select: {
       name: 'name',
+      slug: 'slug',
       vegetarian: 'vegetarian',
     },
     // fields could be destructured into { name, vegetarian }
